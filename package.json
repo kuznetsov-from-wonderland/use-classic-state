@@ -5,7 +5,10 @@
   "main": "lib/index.js",
   "scripts": {
     "build": "webpack --config ./webpack.config.js --mode=production",
-    "prepare": "npm run build"
+    "prepare": "npm run build",
+    "test": "npx jest",
+    "test:watch": "npx jest --watch",
+    "test:coverage": "npm t -- --coverage --watchAll=false"
   },
   "keywords": [],
   "author": "Ilya Kuznetsov",
@@ -21,6 +24,8 @@
     "@babel/preset-env": "^7.2.3",
     "@babel/preset-react": "^7.0.0",
     "@babel/register": "^7.4.4",
+    "@testing-library/react": "^9.3.2",
+    "@types/jest": "^24.0.22",
     "@typescript-eslint/parser": "^2.6.1",
     "babel-eslint": "^10.0.2",
     "babel-loader": "^8.0.5",
@@ -33,6 +38,7 @@
     "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-react": "^7.14.2",
     "eslint-plugin-react-hooks": "^1.6.1",
+    "jest": "^24.9.0",
     "jsdom": "^15.1.1",
     "prettier": "^1.18.2",
     "react": "^16.8.6",
