@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.com/kromsik/use-classic-state.svg?branch=master)](https://travis-ci.org/kromsik/use-classic-state)
+[![Coverage Status](https://coveralls.io/repos/github/kromsik/use-classic-state/badge.svg?branch=master)](https://coveralls.io/github/kromsik/use-classic-state?branch=master)
 ![NPM](https://img.shields.io/npm/l/use-classic-state.svg)
 
 ## Installation
@@ -11,7 +12,7 @@ While refactoring old code we don't want to split existing state (which can be c
 
 ## The solution / Usage
 
-A custom hook with callback fn as a 2nd argument for `setState`, which is available for `setState` only in class components!
+A **well tested** custom hook with callback `fn` as a 2nd argument for `setState`, which is available for `setState` only in class components!
 
 ```js
 import React from 'react';
