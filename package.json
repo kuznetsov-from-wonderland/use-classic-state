@@ -1,7 +1,7 @@
 {
   "name": "use-classic-state",
   "version": "0.0.1",
-  "description": "",
+  "description": "hooked version of setState with a callback",
   "main": "lib/index.js",
   "scripts": {
     "build": "webpack --config ./webpack.config.js --mode=production",
@@ -10,7 +10,13 @@
     "test:watch": "npx jest --watch",
     "test:coverage": "npm t -- --coverage --watchAll=false"
   },
-  "keywords": [],
+  "keywords": [
+    "hooks",
+    "react hooks",
+    "useState",
+    "callback",
+    "useState callback"
+  ],
   "author": "Ilya Kuznetsov",
   "license": "MIT",
   "peerDependencies": {
