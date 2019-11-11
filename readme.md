@@ -1,5 +1,3 @@
-# # useStateWithCallback React Hook
-
 [![Build Status](https://travis-ci.com/kromsik/use-classic-state.svg?branch=master)](https://travis-ci.org/kromsik/use-classic-state)
 ![NPM](https://img.shields.io/npm/l/use-classic-state.svg)
 
