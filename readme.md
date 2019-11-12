@@ -14,6 +14,40 @@ While refactoring old code we don't want to split existing state (which can be c
 
 A **well tested** custom hook with callback `fn` as a 2nd argument for `setState`, which is available for `setState` only in class components!
 
+### Basic Example
+
+```js
+import React from 'react'
+
+import { useClassicState } from 'use-classic-state'
+
+const App = () => {
+  const [state, setState] = useClassicState({
+    count: 10,
+    error: false,
+  })
+  const increment = () => {
+    setState(state => ({ ...state, count: state.count + 1 }))
+  }
+  return (
+    <div>
+      <div>👋</div>
+      <div onClick={increment}>{state.count}</div>
+    </div>
+  )
+}
+```
+
+### Example with callback
+
+> 🆘🚨⚡️☝️
+
+> Important note - it is recommended that your callback `fn` is void function
+
+> In most cases you want this to do some `closeModal` of `notification` things.
+
+> The worst case - you want to **read** already updated state here, but this is not recommended, instead do this with `useUffect`
+
 ```js
 import React from 'react';
 
@@ -37,6 +71,8 @@ const App = () => {
   )
 }
 ```
+
+### Example with Partial state (will be merged with prevState)
 
 ```js
 import React from 'react'
