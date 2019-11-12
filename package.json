@@ -1,6 +1,6 @@
 {
   "name": "use-classic-state",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "hooked version of setState with a callback",
   "main": "lib/index.js",
   "scripts": {

@@ -1,7 +1,7 @@
 /* eslint-disable */
 import React from 'react'
 import { render, fireEvent } from '@testing-library/react'
-import { useClassicState } from './index'
+import { useClassicState } from '../index'
 
 const initialState = {
   count: 0,
