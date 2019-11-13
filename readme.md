@@ -63,9 +63,12 @@ const App = () => {
   }
   return (
     <div>
-      <div>👋</div>
-      <div onClick={increment}>
-        {state.count}
+      <div onClick={increment}>👋</div>
+      <div>
+        {state.count} // 10 -> 11 after `setState`
+      </div>
+      <div>
+        {state.error} // false
       </div>
     </div>
   )
@@ -89,8 +92,11 @@ const App = () => {
   }
   return (
     <div>
-      <div>👋</div>
-      <div onClick={setTo100}>{state.count}</div>
+      <div onClick={setTo100}>👋</div>
+      // 10 -> 100 after `setState`
+      <div>{state.count}</div>
+      // false
+      <div>{state.error}</div>
     </div>
   )
 }
